@@ -1,0 +1,303 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  max-width: 144rem;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.6;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(241, 51, 76, 0.5);
+}
+
+.main-nav__actions {
+  display: flex;
+  gap: 3rem;
+}
+.main-nav__actions button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  text-transform: capitalize;
+}
+.main-nav__actions a {
+  text-decoration: none;
+}
+.main-nav__btn-login a {
+  color: rgb(255, 221, 215);
+}
+.main-nav__btn-login a:hover {
+  color: #fff;
+  transition: all 0.15s;
+}
+.main-nav__btn-sign-up a {
+  color: hsl(356deg, 100%, 66%);
+  background-color: #fff;
+  display: block;
+  border-radius: 5rem;
+  box-shadow: 0rem 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.05);
+  padding: 1.4rem 3.2rem;
+}
+.main-nav__btn-sign-up a:hover {
+  background-color: hsl(355deg, 100%, 74%);
+  color: #fff;
+  transition: all 0.15s;
+}
+
+.hero__heading-actions {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+.hero__heading-actions button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  text-transform: capitalize;
+}
+.hero__heading-actions a {
+  text-decoration: none;
+}
+.hero__heading-start-free-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+}
+.hero__heading-start-free-btn a {
+  color: hsl(356deg, 100%, 66%);
+  background-color: #fff;
+  display: block;
+  border-radius: 5rem;
+  box-shadow: 0rem 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.05);
+  padding: 1.4rem 0;
+  width: 13rem;
+}
+.hero__heading-start-free-btn a:hover {
+  background-color: hsl(355deg, 100%, 74%);
+  color: #fff;
+  transition: all 0.15s;
+}
+.hero__heading-learn-more-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+}
+.hero__heading-learn-more-btn a {
+  color: hsl(356deg, 100%, 66%);
+  background-color: #fff;
+  display: block;
+  border-radius: 5rem;
+  box-shadow: 0rem 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.05);
+  color: #fff;
+  background: none;
+  padding: 1.4rem 0;
+  width: 13rem;
+  box-shadow: none;
+  border: 0.1rem solid;
+}
+.hero__heading-learn-more-btn a:hover {
+  background-color: hsl(355deg, 100%, 74%);
+  color: #fff;
+  transition: all 0.15s;
+  background-color: #fff;
+  color: hsl(355deg, 100%, 74%);
+}
+
+main {
+  font-family: "Overpass", sans-serif;
+}
+
+.design {
+  max-width: 144rem;
+  overflow: hidden;
+  padding: 7rem 0 10rem;
+  position: relative;
+  color: hsl(240deg, 10%, 16%);
+}
+.design__heading-secondary {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -0.15rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.design__row-box {
+  display: flex;
+  align-items: center;
+  max-width: 127rem;
+  margin-left: auto;
+}
+.design__heading-tertiary {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  height: 100%;
+  width: 100%;
+}
+.design__col-1 {
+  max-width: 57rem;
+  margin-right: auto;
+  padding: 3rem 2rem 0;
+}
+.design__text-col-1 {
+  height: 100%;
+  width: 100%;
+}
+.design__text-col-1:not(:last-child) {
+  margin-bottom: 7rem;
+}
+.design__text {
+  color: hsl(207deg, 13%, 34%);
+  line-height: 2;
+}
+.design__col-2 {
+  margin-right: -28rem;
+  max-width: 83%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.hero {
+  background-image: url("../../images/bg-pattern-intro-desktop.svg"), linear-gradient(90deg, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
+  background-repeat: no-repeat;
+  background-position: 26%;
+  border-bottom-left-radius: 10rem;
+  margin-top: -19rem;
+  height: 64vh;
+  max-width: 144rem;
+}
+.hero__heading-box {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Overpass", sans-serif;
+  color: #fff;
+}
+.hero__heading-box span {
+  font-size: 1.9rem;
+  display: block;
+  margin-bottom: 5rem;
+}
+.hero__heading-primary {
+  font-size: 6rem;
+  white-space: nowrap;
+}
+.header {
+  display: flex;
+  max-width: 119rem;
+  margin: 4.4rem auto;
+  padding: 0 2em 0;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 6rem;
+}
+
+.main-nav {
+  margin-right: auto;
+  height: 100%;
+  z-index: 10;
+}
+.main-nav__list {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+.main-nav__link {
+  position: relative;
+}
+.main-nav__link:hover .main-nav__dropdown-list {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.18s;
+}
+.main-nav__link:hover .main-nav__link-box {
+  transition: all 0.15s;
+  color: #fff;
+}
+.main-nav__link:hover svg {
+  transform: rotate(180deg);
+  transition: all 0.15s;
+}
+.main-nav__link-box {
+  padding: 2.2rem 0;
+  font-weight: 700;
+  color: rgb(255, 221, 215);
+  cursor: pointer;
+}
+.main-nav__link-box::before {
+  content: "";
+  position: absolute;
+  top: 4.4rem;
+  left: 0;
+  height: 0.2rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  background-color: #fff;
+  transform-origin: left;
+  transform: scale(0);
+  transition: all 0.15s ease-in-out;
+}
+.main-nav__link-box:hover::before {
+  transform: scaleX(0.82);
+}
+.main-nav__dropdown-list {
+  position: absolute;
+  top: 6.3rem;
+  left: -2.4rem;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  width: 15rem;
+  padding: 2.3rem 6rem 2.3rem 2rem;
+  margin: 0.2rem;
+  line-height: 2;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0rem 1rem 3rem 0.1rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.main-nav__dropdown-item {
+  list-style: none;
+}
+.main-nav__dropdown-item:hover {
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */

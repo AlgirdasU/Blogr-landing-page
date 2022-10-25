@@ -1,0 +1,28 @@
+@use "custom" as *;
+
+@mixin button {
+  // align-self: flex-start;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  //  list-style: none;
+  font-size: inherit;
+}
+
+@mixin buttonStyle {
+  color: $primary-cta-text;
+  background-color: $white;
+ display: block;
+  border-radius: 5rem;
+  box-shadow: 0rem 0rem 0.1rem 0.1rem $button-shadow;
+}
+
+
+@mixin  buttonHover {
+  background-color: $primary-cta-hover-bg;
+  color: $white;
+  transition: all 0.15s;
+  
+}

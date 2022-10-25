@@ -1,0 +1,92 @@
+@use "custom" as *;
+@use "mixins" as *;
+
+.main-nav {
+  &__actions {
+    display: flex;
+
+    gap: 3rem;
+
+    button {
+      @include button;
+      text-transform: capitalize;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__btn-login {
+    a {
+      color: $nav-text;
+
+      &:hover {
+        color: $white;
+        transition: all 0.15s;
+      }
+    }
+  }
+
+  &__btn-sign-up {
+    a {
+      @include buttonStyle;
+      padding: 1.4rem 3.2rem;
+
+      &:hover {
+        @include buttonHover;
+      }
+    }
+  }
+}
+
+.hero {
+  &__heading-actions {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+
+    button {
+      @include button;
+      text-transform: capitalize;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__heading-start-free-btn {
+    @include button;
+
+    a {
+      @include buttonStyle;
+      padding: 1.4rem 0;
+      width: 13rem;
+
+      &:hover {
+        @include buttonHover;
+      }
+    }
+  }
+
+  &__heading-learn-more-btn {
+    @include button;
+
+    a {
+      @include buttonStyle;
+      color: $white;
+      background: none;
+      padding: 1.4rem 0;
+      width: 13rem;
+      box-shadow: none;
+      border: 0.1rem solid ;
+
+      &:hover {
+        @include buttonHover;
+        background-color: $white;
+        color: $primary-cta-hover-bg;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@use "../custom" as *;
+
+.design {
+  // background-color: $white;
+  // background-color: ivory;
+  max-width: 144rem;
+  overflow: hidden;
+  padding: 7rem 0 10rem;
+  position: relative;
+  color: $very-dark-gray;
+
+  &__heading-secondary {
+    text-align: center;
+    font-size: $heading-secondary;
+    font-weight: 600;
+    letter-spacing: -0.15rem;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__row-box {
+    display: flex;
+    align-items: center;
+    max-width: 127rem;
+    margin-left: auto;
+  }
+
+  &__heading-tertiary {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__col-1 {
+    max-width: 57rem;
+    margin-right: auto;
+    padding: 3rem 2rem 0;
+  }
+
+  &__text-col-1 {
+    height: 100%;
+    width: 100%;
+  }
+  &__text-col-1:not(:last-child) {
+    margin-bottom: 7rem;
+  }
+
+  &__text {
+    color: $dark-gray;
+    line-height: 2;
+  }
+
+  &__text-col-2 {
+  }
+
+  &__col-2 {
+    margin-right: -28rem;
+    // height: 100%;
+    max-width: 83%;
+  }
+
+  // &__illustration-col-2 {
+
+  img {
+    // }
+  }
+}

@@ -1,0 +1,47 @@
+@use "../custom" as *;
+
+.hero {
+  background-image: url("../../images/bg-pattern-intro-desktop.svg"),
+    $hero-gradient;
+  background-repeat: no-repeat;
+  // background-position: center;
+  background-position: calc(26%);
+  border-bottom-left-radius: $hero-bg-radius;
+  margin-top: -19rem;
+  height: 64vh;
+  max-width: 144rem;
+ 
+  // margin-bottom: $hero-margin-bottom;
+
+ 
+  &__heading-box {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Overpass", sans-serif;
+    color: $white;
+
+    span {
+      font-size: 1.9rem;
+      display: block;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__heading-primary {
+    font-size: $heading-primary;
+    white-space: nowrap;
+    
+  }
+
+  &__heading-actions {
+  }
+
+  &__heading-start-free-btn {
+  }
+
+  &__heading-learn-more-btn {
+  }
+}
