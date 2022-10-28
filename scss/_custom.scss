@@ -14,6 +14,8 @@ $very-light-red: hsl(13, 100%, 72%);
 $light-red: hsl(353, 100%, 62%);
 $hero-gradient: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
 
+$mobile-gradient: linear-gradient(90deg, hsl(237, 18%, 21%) 0%, hsl(237, 23%, 32%) 60%);
+
 // Background gradient - body
 $very-dark-gray-blue: hsl(237, 18%, 21%);
 $very-dark-desaturated-blue: hsl(237, 23%, 32%);
@@ -22,13 +24,13 @@ $very-dark-desaturated-blue: hsl(237, 23%, 32%);
 $nav-text: rgba(255, 221, 215);
 $font-size: 1.6rem;
 $heading-primary: 6rem;
-$heading-secondary: 4rem;
-$heading-tertiary: 3rem;
+$heading-secondary: 3.8rem;
+$heading-tertiary: 2.5rem;
 
-$hero-bg-radius: 10rem;
+$bg-radius: 10rem;
 $button-shadow: rgba(0,0,0, 0.05);
 $dropdown-shadow: 0rem 1rem 3rem 0.1rem rgba(0,0,0, 0.2);
 
 // Sections margin
-$hero-margin-bottom: 14rem;
+$hero-margin-bottom: 8rem;
 $design-margin-bottom: 3rem;

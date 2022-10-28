@@ -14,15 +14,27 @@
 @mixin buttonStyle {
   color: $primary-cta-text;
   background-color: $white;
- display: block;
+  display: block;
   border-radius: 5rem;
   box-shadow: 0rem 0rem 0.1rem 0.1rem $button-shadow;
 }
 
-
-@mixin  buttonHover {
+@mixin buttonHover {
   background-color: $primary-cta-hover-bg;
   color: $white;
   transition: all 0.15s;
-  
+}
+
+@mixin linkHover {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  height: 0.2rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  background-color: $light-gray;
+  transform-origin: left;
+  transform: scale(0);
+  transition: all 0.15s ease-in-out;
 }

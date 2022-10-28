@@ -6,14 +6,14 @@
   background-repeat: no-repeat;
   // background-position: center;
   background-position: calc(26%);
-  border-bottom-left-radius: $hero-bg-radius;
+  border-bottom-left-radius: $bg-radius;
   margin-top: -19rem;
   height: 64vh;
   max-width: 144rem;
- 
   // margin-bottom: $hero-margin-bottom;
 
- 
+  // margin-bottom: $hero-margin-bottom;
+
   &__heading-box {
     position: absolute;
     top: 34%;
@@ -33,7 +33,6 @@
   &__heading-primary {
     font-size: $heading-primary;
     white-space: nowrap;
-    
   }
 
   &__heading-actions {

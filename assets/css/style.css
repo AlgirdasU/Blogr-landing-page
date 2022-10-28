@@ -129,6 +129,20 @@ body {
   color: hsl(355deg, 100%, 74%);
 }
 
+.btn-mobile-nav {
+  background: none;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+.btn-mobile-nav__icon {
+  width: 4rem;
+  height: 4rem;
+}
+.btn-mobile-nav__icon--close {
+  display: none;
+}
+
 main {
   font-family: "Overpass", sans-serif;
 }
@@ -136,59 +150,225 @@ main {
 .design {
   max-width: 144rem;
   overflow: hidden;
-  padding: 7rem 0 10rem;
-  position: relative;
+  height: 95vh;
   color: hsl(240deg, 10%, 16%);
+  padding-top: 10rem;
+  margin: 5rem 0 5rem;
 }
 .design__heading-secondary {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: 600;
   letter-spacing: -0.15rem;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-bottom: 8rem;
 }
 .design__row-box {
   display: flex;
   align-items: center;
-  max-width: 127rem;
-  margin-left: auto;
+  position: relative;
 }
 .design__heading-tertiary {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  height: 100%;
-  width: 100%;
 }
 .design__col-1 {
-  max-width: 57rem;
-  margin-right: auto;
-  padding: 3rem 2rem 0;
-}
-.design__text-col-1 {
-  height: 100%;
-  width: 100%;
+  width: 35%;
+  margin-left: 10vw;
 }
 .design__text-col-1:not(:last-child) {
   margin-bottom: 7rem;
 }
 .design__text {
   color: hsl(207deg, 13%, 34%);
-  line-height: 2;
+  line-height: 1.6;
 }
 .design__col-2 {
-  margin-right: -28rem;
-  max-width: 83%;
+  position: absolute;
+  right: -19%;
+  max-width: 64%;
 }
+.design__col-2-img {
+  height: 100%;
+  width: 100%;
+}
+.design__col-2-img--mobile {
+  display: none;
+}
+.mobile {
+  position: relative;
+  max-width: 144rem;
+  margin-bottom: 15rem;
+}
+.mobile__pattern-box {
+  background: linear-gradient(90deg, hsl(237deg, 18%, 21%) 0%, hsl(237deg, 23%, 32%) 60%);
+  height: 40rem;
+  border-bottom-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+  position: relative;
+  overflow: hidden;
+}
+.mobile__illustration-pattern {
+  position: absolute;
+  top: -52vh;
+  left: -14vw;
+  transition: all 1.8s;
+}
+.mobile__mobile-box {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -18%;
+  left: 5%;
+}
+.mobile__col-1 {
+  max-width: 55.2rem;
+  max-height: 57.9rem;
+}
+.mobile__illustration-mobile {
+  width: 100%;
+  height: auto;
+}
+.mobile__col-2 {
+  margin: 0 auto 3rem;
+  padding-right: 2rem;
+  color: #fff;
+  width: 40%;
+}
+.mobile__tertiary {
+  font-size: 3.8rem;
+  letter-spacing: -0.1rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  line-height: 1;
+}
+.mobile__text {
+  line-height: 2;
+}
+
+.laptop {
+  max-width: 144rem;
+  height: 95vh;
+  overflow: hidden;
+  position: relative;
+}
+.laptop__row-box {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: -27rem;
+}
+.laptop__col-1 {
+  max-width: 97.4rem;
+  max-height: 78.6rem;
+}
+.laptop__img-col-1 {
+  width: 100%;
+  height: auto;
+}
+.laptop__img-col-1--mobile {
+  display: none;
+}
+.laptop__heading-tertiary {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.laptop__col-2 {
+  width: 30%;
+  margin: 0 13vw 0 3vw;
+}
+.laptop__text-col-2:not(:last-child) {
+  margin-bottom: 7rem;
+}
+.laptop__text {
+  color: hsl(207deg, 13%, 34%);
+  line-height: 1.6;
+}
+.footer {
+  max-width: 144rem;
+  width: 100%;
+  min-height: 36rem;
+  background-color: hsl(240deg, 10%, 16%);
+  border-top-right-radius: 10rem;
+  display: grid;
+  place-items: center;
+  padding: 5rem 12rem 3rem;
+  position: relative;
+}
+.footer__row-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  width: 100%;
+  color: #fff;
+  margin: 0 auto;
+}
+.footer__logo-col {
+  margin-bottom: 3rem;
+}
+.footer__heading-fourth {
+  margin-bottom: 3rem;
+}
+.footer__nav-col {
+  margin-bottom: 3rem;
+}
+.footer__nav-list {
+  list-style: none;
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+}
+.footer__nav-list::before {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  height: 0.2rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  background-color: hsl(240deg, 2%, 79%);
+  transform-origin: left;
+  transform: scale(0);
+  transition: all 0.15s ease-in-out;
+}
+.footer__nav-list:hover::before {
+  transform: scaleX(1);
+}
+.footer__nav-item {
+  margin-bottom: 0.9rem;
+}
+.footer__nav-item a {
+  text-decoration: none;
+  color: hsl(240deg, 2%, 79%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: absolute;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%);
 }
-
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(240deg, 2%, 79%);
+  text-decoration: none;
+  position: relative;
+}
+.attribution a::before {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  height: 0.2rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  background-color: hsl(240deg, 2%, 79%);
+  transform-origin: left;
+  transform: scale(0);
+  transition: all 0.15s ease-in-out;
+  top: 1.2rem;
+}
+.attribution a:hover::before {
+  transform: scaleX(1);
 }
 
 .hero {
@@ -224,6 +404,7 @@ main {
   margin: 4.4rem auto;
   padding: 0 2em 0;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -231,14 +412,17 @@ main {
 }
 
 .main-nav {
-  margin-right: auto;
-  height: 100%;
+  display: flex;
+  align-self: flex-end;
+  width: 100%;
   z-index: 10;
 }
 .main-nav__list {
   display: flex;
   list-style: none;
   gap: 3rem;
+  align-self: center;
+  margin-right: auto;
 }
 .main-nav__link {
   position: relative;
@@ -255,6 +439,7 @@ main {
 .main-nav__link:hover svg {
   transform: rotate(180deg);
   transition: all 0.15s;
+  color: #fff;
 }
 .main-nav__link-box {
   padding: 2.2rem 0;
@@ -265,15 +450,17 @@ main {
 .main-nav__link-box::before {
   content: "";
   position: absolute;
-  top: 4.4rem;
+  top: 2rem;
   left: 0;
   height: 0.2rem;
   width: 100%;
   border-radius: 0.8rem;
-  background-color: #fff;
+  background-color: hsl(240deg, 2%, 79%);
   transform-origin: left;
   transform: scale(0);
   transition: all 0.15s ease-in-out;
+  top: 4.4rem;
+  background-color: #fff;
 }
 .main-nav__link-box:hover::before {
   transform: scaleX(0.82);

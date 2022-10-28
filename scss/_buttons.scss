@@ -80,13 +80,31 @@
       padding: 1.4rem 0;
       width: 13rem;
       box-shadow: none;
-      border: 0.1rem solid ;
+      border: 0.1rem solid;
 
       &:hover {
         @include buttonHover;
         background-color: $white;
         color: $primary-cta-hover-bg;
       }
+    }
+  }
+}
+
+// Desktop/mobile toggle
+.btn-mobile-nav {
+  background: none;
+  // display: none;
+  border: none;
+  display: none;
+  cursor: pointer;
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+
+    &--close {
+      display: none;
     }
   }
 }
