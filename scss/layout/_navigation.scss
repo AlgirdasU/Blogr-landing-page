@@ -1,6 +1,5 @@
 @use "../custom" as *;
 @use "../mixins" as *;
-// @use "../base" as *;
 
 .header {
   display: flex;
@@ -11,8 +10,13 @@
   position: relative;
 }
 
-.logo {
+.logo a {
   margin-right: 6rem;
+  display: block;
+}
+
+.main-nav__hidden .main-nav {
+  transform: translateX(100%);
 }
 
 .main-nav {
@@ -33,20 +37,42 @@
   &__link {
     position: relative;
 
-    &:hover .main-nav__dropdown-list {
+    &.active > .main-nav__dropdown-menu {
+      position: relative;
+      top: 0;
+      left: 0;
       opacity: 1;
       visibility: visible;
-      transition: all 0.18s;
+      display: grid;
+      width: 100%;
+      padding: 0;
+      box-shadow: none;
     }
-    &:hover .main-nav__link-box {
+
+    &.active > .main-nav__link-box > .main-nav__link-btn {
+      opacity: 0.8;
+    }
+
+    &.active > .main-nav__link-box > .main-nav__icon {
+      transform: rotate(180deg);
+      transition: all 0.15s;
+    }
+
+    &--hover:hover .main-nav__link-box {
       transition: all 0.15s;
       color: $white;
     }
 
-    &:hover svg {
+    &--hover:hover svg {
       transform: rotate(180deg);
       transition: all 0.15s;
       color: $white;
+    }
+
+    &--hover:hover .main-nav__dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.15s;
     }
   }
 
@@ -56,23 +82,27 @@
     color: $nav-text;
     cursor: pointer;
 
-  
-
-    &::before {
-      @include linkHover;
-      top: 4.4rem;
-      background-color: $white;
+    &--active {
+      padding: 2.2rem 0;
+      font-weight: 700;
+      color: $nav-text;
+      cursor: pointer;
     }
 
-    &:hover::before {
-      transform: scaleX(0.82);
+    &--hover {
+      &::before {
+        @include linkHover;
+        top: 4.4rem;
+        background-color: $white;
+      }
+
+      &:hover::before {
+        transform: scaleX(0.82);
+      }
     }
   }
 
-  &__hover-menu {
-  }
-
-  &__dropdown-list {
+  &__dropdown-menu {
     position: absolute;
     top: 6.3rem;
     left: -2.4rem;
@@ -86,9 +116,6 @@
     visibility: hidden;
     box-shadow: $dropdown-shadow;
     cursor: pointer;
-
-    &:hover {
-    }
   }
 
   &__dropdown-item {

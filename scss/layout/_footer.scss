@@ -15,35 +15,30 @@
 
   &__row-box {
     display: grid;
-    // max-width: 110.8rem;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
     width: 100%;
     color: $white;
     margin: 0 auto;
 
-    // position: relative;
   }
 
   &__logo-col {
    margin-bottom: 3rem;
   }
 
-  &__logo-img {
-  }
-
-  &__heading-fourth {
-    margin-bottom: 3rem;
+   &__heading-fourth {
+    margin-bottom: 2rem;
   }
 
   &__nav-col {
     margin-bottom: 3rem;
+    
   }
 
   &__nav-list {
     list-style: none;
     position: relative;
     width: fit-content;
-
     cursor: pointer;
 
     &::before {

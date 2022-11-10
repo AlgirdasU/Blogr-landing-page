@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <meta
+      name="description"
+      content="Blogr landing page of Frontend Mentor. View Algirdas's completed code challenge solutions."
+    />
 
     <link
       rel="icon"
@@ -20,7 +23,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/queries.css">
+    <link rel="stylesheet" href="assets/css/queries.css" />
+    <script defer src="js/script.js"></script>
 
     <title>Frontend Mentor | [Blogr]</title>
   </head>
@@ -34,10 +38,22 @@
 
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__link">
-            <div class="main-nav__link-box">
-              <span>Product</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+          <li
+            class="main-nav__link main-nav__link--hover"
+            data-dropdown
+            tabindex="0"
+          >
+            <div
+              class="main-nav__link-box main-nav__link-box--hover"
+              data-dropdown-btn
+            >
+              <span class="main-nav__link-btn">Product</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="7"
+                class="main-nav__icon"
+              >
                 <path
                   fill="none"
                   stroke="currentColor"
@@ -47,7 +63,7 @@
                 />
               </svg>
             </div>
-            <div class="main-nav__hover-menu">
+            <div class="main-nav__dropdown-menu">
               <ul class="main-nav__dropdown-list">
                 <li class="main-nav__dropdown-item">Overview</li>
                 <li class="main-nav__dropdown-item">Pricing</li>
@@ -58,10 +74,22 @@
             </div>
           </li>
 
-          <li class="main-nav__link">
-            <div class="main-nav__link-box">
-              <span>Company</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+          <li
+            class="main-nav__link main-nav__link--hover"
+            data-dropdown
+            tabindex="0"
+          >
+            <div
+              class="main-nav__link-box main-nav__link-box--hover"
+              data-dropdown-btn
+            >
+              <span class="main-nav__link-btn">Company</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="7"
+                class="main-nav__icon"
+              >
                 <path
                   fill="none"
                   stroke="currentColor"
@@ -72,7 +100,9 @@
               </svg>
             </div>
 
-            <div class="main-nav__hover-menu">
+            <div
+              class="main-nav__dropdown-menu main-nav__dropdown-menu--active"
+            >
               <ul class="main-nav__dropdown-list">
                 <li class="main-nav__dropdown-item">About</li>
                 <li class="main-nav__dropdown-item">Team</li>
@@ -82,10 +112,22 @@
             </div>
           </li>
 
-          <li class="main-nav__link">
-            <div class="main-nav__link-box">
-              <span>Connect</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+          <li
+            class="main-nav__link main-nav__link--hover"
+            data-dropdown
+            tabindex="0"
+          >
+            <div
+              class="main-nav__link-box main-nav__link-box--hover"
+              data-dropdown-btn
+            >
+              <span class="main-nav__link-btn">Connect</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="7"
+                class="main-nav__icon"
+              >
                 <path
                   fill="none"
                   stroke="currentColor"
@@ -95,7 +137,9 @@
                 />
               </svg>
             </div>
-            <div class="main-nav__hover-menu">
+            <div
+              class="main-nav__dropdown-menu main-nav__dropdown-menu--active"
+            >
               <ul class="main-nav__dropdown-list">
                 <li class="main-nav__dropdown-item">Contact</li>
                 <li class="main-nav__dropdown-item">Newsletter</li>
@@ -114,6 +158,7 @@
         </div>
       </nav>
 
+      <!-- TOGGLE MOBILE -->
       <button class="btn-mobile-nav">
         <svg class="btn-mobile-nav__icon btn-mobile-nav__icon--open">
           <use xLink:href="images/sprite.svg#icon-hamburger"></use>

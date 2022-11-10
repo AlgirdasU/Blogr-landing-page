@@ -7,7 +7,9 @@
 }
 
 html {
+  box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px.
+  overflow-x: hidden;
 }
 
 body {
@@ -18,12 +20,10 @@ body {
   font-family: "Ubuntu", sans-serif;
   // font-family: 'Overpass', sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
-
-
 
 *:focus {
   outline: none;
-
-  box-shadow: 0 0 0 0.8rem rgba(241, 51, 76, 0.5);
+  box-shadow: 0 0 0 0.4rem rgba(241, 51, 76, 0.5);
 }

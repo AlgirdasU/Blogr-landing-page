@@ -1,13 +1,12 @@
 @use "custom" as *;
 
 @mixin button {
-  // align-self: flex-start;
   border: none;
   background: none;
   cursor: pointer;
   font-family: inherit;
   font-weight: 700;
-  //  list-style: none;
+
   font-size: inherit;
 }
 

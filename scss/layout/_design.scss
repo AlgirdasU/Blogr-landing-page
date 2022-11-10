@@ -3,40 +3,40 @@
 .design {
   max-width: 144rem;
   overflow: hidden;
-  height: 95vh;
-  color: $very-dark-gray;
-  padding-top: 10rem;
-  margin: 5rem 0 5rem;
+  margin-top: 7rem;
 
   &__heading-secondary {
-    text-align: center;
     font-size: $heading-secondary;
     font-weight: 600;
     letter-spacing: -0.15rem;
-    margin-bottom: 8rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 12rem;
+    margin: 0 2rem;
+    text-align: center;
   }
 
   &__row-box {
     display: flex;
     align-items: center;
-    position: relative;
+    margin-right: -21%;
+    margin-bottom: 10rem;
   }
 
   &__heading-tertiary {
     font-size: $heading-tertiary;
     margin-bottom: 2rem;
+    line-height: 1.2;
   }
 
   &__col-1 {
-    width: 35%;
-    margin-left: 10vw;
+    max-width: 45%;
+    margin-top: 3rem;
   }
 
   &__text-col-1 {
-    // margin-bottom: 7rem;
-  }
-  &__text-col-1:not(:last-child) {
-    margin-bottom: 7rem;
+    margin: 3rem 10% 7rem 26%;
   }
 
   &__text {
@@ -44,13 +44,10 @@
     line-height: 1.6;
   }
 
-  &__text-col-2 {
-  }
-
   &__col-2 {
-    position: absolute;
-    right: -19%;
-    max-width: 64%;
+    margin-top: -12rem;
+    max-height: 88.2rem;
+    max-width: 92.5rem;
   }
 
   &__col-2-img {
@@ -63,12 +60,6 @@
       display: none;
     }
   }
-
-  // &__illustration-col-2 {
-
-  img {
-    // }
-  }
 }
 
 // MOBILE ILLSUTRATION
@@ -76,10 +67,6 @@
   position: relative;
   max-width: 144rem;
   margin-bottom: 15rem;
-
-  &__row-box {
-    // position: relative;
-  }
 
   &__pattern-box {
     background: $mobile-gradient;
@@ -127,8 +114,7 @@
     letter-spacing: -0.1rem;
     font-weight: 600;
     margin-bottom: 3rem;
-    line-height: 1;
-    // white-space: nowrap;
+    line-height: 1.2;
   }
 
   &__text {
@@ -139,22 +125,21 @@
 // LAPTOP ILLUSTRATION
 .laptop {
   max-width: 144rem;
-  height: 95vh;
   overflow: hidden;
-  position: relative;
+  margin-top: 7rem;
 
   &__row-box {
     display: flex;
     align-items: center;
-    position: absolute;
-    left: -27rem;
+
+    margin-left: -18%;
+    margin-bottom: 10rem;
   }
 
   &__col-1 {
     max-width: 97.4rem;
-    
-    max-height: 78.6rem;
 
+    max-height: 78.6rem;
   }
 
   &__img-col-1 {
@@ -170,24 +155,20 @@
   &__heading-tertiary {
     font-size: $heading-tertiary;
     margin-bottom: 2rem;
+    letter-spacing: 0.1rem;
   }
 
   &__col-2 {
-    width: 30%;
-    margin: 0 13vw 0 3vw;
+    max-width: 45%;
+    margin-top: 3rem;
   }
 
   &__text-col-2 {
-  }
-  &__text-col-2:not(:last-child) {
-    margin-bottom: 7rem;
+    margin: 0 26% 7rem 10%;
   }
 
   &__text {
     color: $dark-gray;
     line-height: 1.6;
-  }
-
-  &__text-col-1 {
   }
 }

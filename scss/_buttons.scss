@@ -4,7 +4,6 @@
 .main-nav {
   &__actions {
     display: flex;
-
     gap: 3rem;
 
     button {
@@ -43,8 +42,9 @@
 .hero {
   &__heading-actions {
     display: flex;
-    gap: 3rem;
+    gap: 1.6rem;
     justify-content: center;
+    
 
     button {
       @include button;
@@ -94,14 +94,14 @@
 // Desktop/mobile toggle
 .btn-mobile-nav {
   background: none;
-  // display: none;
+ 
   border: none;
   display: none;
   cursor: pointer;
 
   &__icon {
-    width: 4rem;
-    height: 4rem;
+    width: 2.8rem;
+    height: 2.8rem;
 
     &--close {
       display: none;
