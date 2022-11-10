@@ -44,7 +44,7 @@
     display: flex;
     gap: 1.6rem;
     justify-content: center;
-    
+    font-weight: 600;
 
     button {
       @include button;
@@ -94,7 +94,7 @@
 // Desktop/mobile toggle
 .btn-mobile-nav {
   background: none;
- 
+
   border: none;
   display: none;
   cursor: pointer;
